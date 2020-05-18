@@ -19,3 +19,7 @@ defaults write com.apple.dock springboard-columns -int 8
 
 defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
 >
+
+### Mac系统底部工具栏大小如何调整
+
+https://jingyan.baidu.com/article/1e5468f9d857d6084961b7fa.html
