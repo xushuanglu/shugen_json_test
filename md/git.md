@@ -28,3 +28,27 @@
 
 这样别人在搜索你的项目时，就可以快速定位查看你的项目了。
 >
+
+
+git之将主分支merge到自己分支
+
+在进行git merge master时 git提示Already up to date.但其实并没有将最近代码拉下来。
+百度后，找得到原因是master上的代码不是最新的
+1 .切换到主干
+
+$ git checkout master
+
+更新主干代码
+$ git pull origin master
+
+切换回分支
+$ git checkout dev
+
+执行合并操作
+$ git merge master
+
+取消合并
+$ git merge --abort
+
+从远端拉取分支
+$ git remote prune origin
