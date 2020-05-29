@@ -83,4 +83,17 @@ func TestCode(t *testing.T) {
 	// 注意两个 slice 相等，值和顺序必须一致
 	fmt.Println("v1 == v2: ", reflect.DeepEqual(s1, s2)) // true
 
+	type Operation int
+
+	const (
+		// Add Operation = iota //错误
+		Add Operation = iota + 1 //正确
+		Subtract
+		Multiply
+	)
+
+	fmt.Println("Add:", Add, "Subtract:", Subtract, "Multiply:", Multiply)
+
+	// Add=0, Subtract=1, Multiply=2
+
 }
